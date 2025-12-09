@@ -512,3 +512,36 @@ header::after {
     gap: 2rem;
   }
 }
+
+.qr-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-modal-content {
+  background: #fff;
+  padding: 25px;
+  width: 320px;
+  text-align: center;
+  border-radius: 12px;
+  position: relative;
+}
+
+.qr-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.qr-image {
+  width: 250px;
+  margin: 15px 0;
+}
+
