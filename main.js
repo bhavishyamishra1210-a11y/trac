@@ -83,3 +83,20 @@ const loginBtn = document.querySelector(".nav__btns .btn");
 loginBtn.addEventListener("click", () => {
   window.location.href = "login.html"; // login page open
 });
+
+const payBtn = document.getElementById("payBtn");
+const qrModal = document.getElementById("qrModal");
+const closeQR = document.getElementById("closeQR");
+
+payBtn.onclick = () => {
+  qrModal.style.display = "flex";
+};
+
+closeQR.onclick = () => {
+  qrModal.style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target == qrModal) qrModal.style.display = "none";
+};
+
