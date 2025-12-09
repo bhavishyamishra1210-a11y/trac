@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Web + Payment</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        background: #f3f3f3;
+    }
+
+    header {
+        background: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .pay-box {
+        background: white;
+        width: 350px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .pay-box img {
+        width: 250px;
+        margin-top: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 18px;
+        border: none;
+        background: black;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #444;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    Fitness Website + Payment Gateway
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="section">
+    <h2>Welcome to My Fitness Website</h2>
+    <p>Track your workout, weight and daily fitness progress.</p>
+</div>
+
+<!-- PAYMENT SECTION -->
+<div class="section" id="payment">
+    <h2>💳 Payment Section</h2>
+
+    <div class="pay-box">
+        <h3>Scan to Pay</h3>
+
+        <!-- 👉 Replace "myqr.png" with your own QR image file -->
+        <img src="myqr.png" alt="Pay QR">
+
+        <p><b>UPI ID:</b> yourupi@upi</p>
+
+        <button onclick="alert('Payment Feature Active!')">Pay Now</button>
+    </div>
+</div>
+
+<script>
+    // Simple JS (Optional for animation)
+    console.log("Payment section loaded successfully!");
+</script>
+
+</body>
+</html>
